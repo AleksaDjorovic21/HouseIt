@@ -1,0 +1,563 @@
+{
+	"info": {
+		"_postman_id": "6b1e99fc-f1a3-4ee5-88bb-0350de0290b5",
+		"name": "HouseItAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36353384"
+	},
+	"item": [
+		{
+			"name": "DesignRequestAPI",
+			"item": [
+				{
+					"name": "Get All DesignRequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/DesignRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id DesignRequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/DesignRequest/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create DesignRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"name\": \"New Design Request\",\r\n  \"description\": \"Design Request description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/DesignRequest"
+					},
+					"response": []
+				},
+				{
+					"name": "Update DesignRequest",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Updated Design Request\",\r\n  \"description\": \"Updated details of the design request.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/DesignRequest/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DesignRequest",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/DesignRequest/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BalconyAPI",
+			"item": [
+				{
+					"name": "Get All Balconies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Balcony"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Balcony",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Balcony/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Balcony",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Balcony"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Balcony",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"size\": 60,\r\n    \"type\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Balcony/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Balcony",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Balcony/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DoorAPI",
+			"item": [
+				{
+					"name": "Get All Doors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Door"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Doors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Door/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Doors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Door"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Doors",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Door/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Doors",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"roomType\": \"Single\",\r\n    \"color\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Door/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FloorAPI",
+			"item": [
+				{
+					"name": "Create Floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"rooms\": [],\r\n    \"kitchens\": [],\r\n    \"toilets\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Floor"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Floors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Floor"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Floors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Floor/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Floors",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"roomCount\": 0,\r\n    \"rooms\": [1],\r\n    \"kitchens\": [],\r\n    \"toilets\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Floor/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Floors",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Floor/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "KitchenAPI",
+			"item": [
+				{
+					"name": "Get All Kitchens",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Kitchen"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Kitchens",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Kitchen/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Kitchens",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"HasDiningArea\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Kitchen"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Kitchens",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"HasDiningArea\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Kitchen/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Kitchens",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Kitchen/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RoomAPI",
+			"item": [
+				{
+					"name": "Get All Rooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Room"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Rooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Room/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Rooms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Room"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rooms",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 2,\r\n        \"roomType\": 0,\r\n        \"hasBalcony\": false,\r\n        \"balcony\": null,\r\n        \"sqrm\": 120,\r\n        \"color\": 0,\r\n        \"doors\": [],\r\n        \"windows\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Room/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Rooms",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Room/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ToletAPI",
+			"item": [
+				{
+					"name": "Get All Toilets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Toilet"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Toilets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Toilet/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Toilets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Toilet"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Toilets",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"toiletType\": 0,\r\n    \"sqrm\": 120,\r\n    \"color\": 0,\r\n    \"doors\": [],\r\n    \"windows\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Toilet/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Toilets",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Toilet/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WindowAPI",
+			"item": [
+				{
+					"name": "Get All Windows",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Window"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id Wndows",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5031/api/Window/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Windows",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Window"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Windows",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"size\": 120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5031/api/Window/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Windows",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5031/api/Window/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
